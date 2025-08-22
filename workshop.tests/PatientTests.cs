@@ -120,7 +120,7 @@ public class Tests
         var client = factory.CreateClient();
 
         // Act
-        var response = await client.GetAsync("/surgery/patients");
+        var response = await client.GetAsync("/surgery/appointments");
 
         // Assert
         Assert.That(response.StatusCode == System.Net.HttpStatusCode.OK);
